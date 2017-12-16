@@ -187,6 +187,12 @@ var settings = []Setting{
 		callbacks:   []setFn{EnableOrDisableDefaultStorageClass},
 	},
 	{
+		name:        "freshpod",
+		set:         SetBool,
+		validations: []setFn{IsValidAddon},
+		callbacks:   []setFn{EnableOrDisableDefaultStorageClass},
+	},
+	{
 		name: "hyperv-virtual-switch",
 		set:  SetString,
 	},

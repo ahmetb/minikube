@@ -13,6 +13,7 @@ $ minikube addons list
 - coredns: disabled
 - heapster: disabled
 - efk: disabled
+- freshpod: disabled
 - ingress: disabled
 
 # minikube must be running for these commands to take effect
@@ -34,6 +35,7 @@ The currently supported addons include:
 * [Registry Credentials](https://github.com/upmc-enterprises/registry-creds)
 * [CoreDNS](https://github.com/coredns/deployment/tree/master/kubernetes)
 * [Ingress](https://github.com/kubernetes/ingress-nginx)
+* [Freshpod](https://github.com/GoogleCloudPlatform/freshpod)
 
 If you would like to have minikube properly start/restart custom addons, place the addon(s) you wish to be launched with minikube in the `.minikube/addons` directory. Addons in this folder will be moved to the minikube VM and launched each time minikube is started/restarted.
 
